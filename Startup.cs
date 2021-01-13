@@ -39,7 +39,7 @@ namespace BenITHome
             else
             {
                 services.AddDbContext<BenITHomeContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("ArticleContext")));
+                options.UseSqlServer(Configuration.GetConnectionString("ArticleContext")));
             }
 
         }
