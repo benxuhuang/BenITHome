@@ -24,7 +24,8 @@ namespace BenITHome.Models
                         Title = "Day01 Azure 的自我修煉",
                         ReleaseDate = DateTime.Parse("2020-09-01"),
                         Link = "https://ithelp.ithome.com.tw/articles/10233277",
-                        Count = 0
+                        Count = 0,
+                        Category = "鐵人賽"
                     },
 
                     new Article
@@ -32,7 +33,8 @@ namespace BenITHome.Models
                         Title = "Day02 申請Azure帳號",
                         ReleaseDate = DateTime.Parse("2020-09-02"),
                         Link = "https://ithelp.ithome.com.tw/articles/10233285",
-                        Count = 0
+                        Count = 0,
+                        Category = "鐵人賽"
                     },
 
                     new Article
@@ -40,7 +42,8 @@ namespace BenITHome.Models
                         Title = "Day03 Resource Group 資源群組",
                         ReleaseDate = DateTime.Parse("2020-09-03"),
                         Link = "https://ithelp.ithome.com.tw/articles/10233371",
-                        Count = 0
+                        Count = 0,
+                        Category = "鐵人賽"
                     },
 
                     new Article
@@ -48,7 +51,8 @@ namespace BenITHome.Models
                         Title = "Day04 Dotnet Core 專案",
                         ReleaseDate = DateTime.Parse("2020-09-04"),
                         Link = "https://ithelp.ithome.com.tw/articles/10233562",
-                        Count = 0
+                        Count = 0,
+                        Category = "鐵人賽"
                     }
                 );
                 context.SaveChanges();

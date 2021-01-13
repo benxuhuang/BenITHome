@@ -3,14 +3,16 @@ using System;
 using BenITHome.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BenITHome.Migrations
 {
     [DbContext(typeof(BenITHomeContext))]
-    partial class BenITHomeContextModelSnapshot : ModelSnapshot
+    [Migration("20210113132238_ArticleAddCategory")]
+    partial class ArticleAddCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
