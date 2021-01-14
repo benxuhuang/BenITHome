@@ -32,15 +32,14 @@ namespace BenITHome
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            if(Environment.IsDevelopment()){
-                services.AddDbContext<BenITHomeContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("ArticleContext")));
-            }
-            else
-            {
-                services.AddDbContext<BenITHomeContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("ArticleContext")));
-            }
+            // if(Environment.IsDevelopment()){
+            //     services.AddDbContext<BenITHomeContext>(options =>
+            //         options.UseSqlite(Configuration.GetConnectionString("ArticleContext")));
+            // }
+            // else
+            // {
+                services.AddDbContext<BenITHomeContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ArticleContext")));
+            // }
 
         }
 
